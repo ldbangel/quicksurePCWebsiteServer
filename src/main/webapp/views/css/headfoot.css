@@ -1,0 +1,70 @@
+/* 头部样式开始   */
+.head_content img{}
+.head_content,.footer_conten,.yhl_brandleader_video,.choose_yhl,.f_content{width:1170px;margin:0 auto;position:relative;}
+.menu{float:right;}
+.menu li{float:left;height:42px;padding:0px  4px;line-height:42px;font-size:15px;}
+.menu li>a{padding:2px 15px;
+    display:inline-block;
+    margin:0px 10px;
+    font-size:15px;
+    line-height:15px;
+    letter-spacing: 2px;
+    color: #333;
+}
+.menu li>span>a{
+    padding:2px 15px;
+    display:inline-block;
+    margin:0px 10px;
+    font-size:15px;
+    line-height:15px;
+    letter-spacing: 2px;
+    color: #333;
+}
+.head_top{background: linear-gradient(90deg, #dcdcdc 10%, #e3e3e3 20%, #dcdcdc 80%);}
+.menu li i{display:inline-block;border-right:1px solid #888;height:14px;margin-bottom: -3px;}
+.select_a .hidden{display:none;}
+/* 头部样式结束   */
+
+
+
+/* 尾部样式开始 */
+.f_content{padding-top:53px;}
+.YHL_left{/* width: 745px; */
+	margin: 0 190px;
+	float: left;
+	margin-right: 0px;
+}
+.YHL_left ul{width:100%;}
+.YHL_left ul li{float:left;font-size:14px;margin-bottom: 14px;}
+.YHL_left ul li a{margin:22px 15px;color:#333;}
+
+.footer{background:#dadada;padding-bottom:60px;}
+.YHL_left p{text-align:center;
+    color: #ababab;
+    margin-bottom: 14px;
+}
+.YHL_right{ width:122px;float: left;}
+.YHL_left p img{vertical-align: middle;margin-left:10px;}
+.YHL_right p{color:rgb(102,102,102);font-size:14px;margin-top: 8px;text-align:center;}
+/* 尾部样式结束 */
+
+.menu a:hover{
+	color: red;
+	font-weight: 900;
+	transform: scale(1.1);
+}
+.menu a{
+	cursor: pointer;
+	transition: all 0.4s;	
+}
+.YHL_left a:hover{
+	color: red;
+	font-weight: 900;
+}
+.YHL_right img{
+	cursor: pointer;
+	transition: all 0.5s;	
+}
+.YHL_right img:hover{
+	transform: scale(1.2);	
+}

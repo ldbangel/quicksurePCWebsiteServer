@@ -1,0 +1,346 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-weight: normal;
+	font-family: noto, microsoft yahei, 微软雅黑, Arial;
+	
+}
+body {
+	font-size: 13px;
+	color: #444;
+	text-align: center;
+	background: #cecece url(../image/login-bg.jpg) 50% 0 no-repeat;
+}
+/* @font-face {
+	font-family: noto;
+	src: url("../fonts/noto.otf");
+} */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+    color: #cecece;
+}
+input::-moz-input-placeholder, textarea::-moz-input-placeholder { 
+    color: #cecece;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder { 
+    color: #cecece;
+}
+input::input-placeholder, textarea::input-placeholder { 
+    color: #cecece;
+}
+ul li {
+	list-style-type: none;
+}
+a {
+	color: #444;
+	text-decoration: none;
+}
+a: hover {
+	color: #f63c30;
+}
+.cl {
+	clear: both;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+	outline: none;
+}
+input::-ms-clear {
+	display: none;
+}
+.login {
+	position: relative;
+	padding: 5px 0;
+	/*margin: 130px 0 0 200px;*/
+	margin: 90px 0 0 15%;
+	width: 376px;
+	height: 316px;
+	border-radius: 2px;
+	background: rgba(255,255,255,.5);	
+  /*filter: alpha(opacity=50);
+	-moz-opacity: .5;
+	-khtml-opacity: .5;
+	opacity: .5;*/	
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#80000000, endColorstr=#80000000)";
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1, startColorstr=#80000000, endColorstr=#80000000);
+}
+.header {
+	position: relative;
+	height: 52px;
+}
+.header .switch {
+	position: absolute;
+	font-size: 16px;
+}
+#qlogin {
+	margin: 25px 0 0 0;
+}
+.header .switch #switch_qlogin {
+	margin-right: 85px;
+}
+.header .switch .switch_btn {
+	color: #888;
+	background: rgba(248,248,248,1);
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
+	outline: none;
+	*hide-focus: expression(this.hideFocus=true);
+}
+.header .switch .switch_btn_focus {
+	display: inline-block;
+	line-height: 52px;
+	border-top: 3px solid #f63c30;
+	outline: none;
+	*hide-focus: expression(this.hideFocus=true);
+}
+.header .switch .switch_btn:hover {
+	color: #444;
+	text-decoration: none;
+}
+.header .switch .switch_btn_focus:hover {
+	text-decoration: none;
+}
+.web_login {
+	position: relative;
+}
+#web_login {
+	_left: 60px;
+	*left: 0;
+}
+.web_login .login_form, .web_login .reg_form {
+	width: 300px;
+	margin: 0 auto;
+}
+.web_login .input-tips {
+	position: absolute;
+	top: 17px;
+	left: 1px;
+	width: 18px;
+	height: 23px;
+	background: url(../image/log-reg.png) -1px -1px no-repeat;
+}
+.web_login .input-tips-2 {
+	position: absolute;
+	top: 20px;
+	left: 1px;
+	width: 19px;
+	height: 22px;
+	background: url(../image/log-reg.png) -20px -1px no-repeat;
+}
+.web_login .input-tips2 {
+	position: absolute;
+	left: 40px;
+	margin-top: 10px;
+	width: 22px;
+	height: 22px;
+	background: url(../image/log-reg.png) -40px -1px no-repeat;
+}
+.web_login .input-tips2-2 {
+	position: absolute;
+	left: 40px;
+	margin-top: 10px;
+	width: 20px;
+	height: 24px;
+	background: url(../image/log-reg.png) -63px -1px no-repeat;
+}
+.web_login .inputOuter {
+	width: 300px;
+	height: 42px;
+	margin-top: 10px;
+	float: left;
+}
+.web_login .inputOuter2 {
+	width: 300px;
+	margin-top: 6px;
+	margin-top: 5px\9;
+	float: left;
+}
+.web_login .inputOuter input, .web_login .inputOuter2 input {
+	background: none;
+}
+.web_login .inputstyle {
+	width: 300px;
+	height: 38px;
+	padding-left: 5px;
+	line-height: 30px;
+	line-height: 38px;
+	border: 1px solid #D7D7D7;
+	background: #fff;
+	color: #333;
+	border-radius: 2px;
+	font-size: 16px;
+}
+.web_login input.inputstyle2:focus, .web_login input.inputstyle:focus {
+	border: 1px solid #f63c30;
+	box-shadow: 0 0 2px #198BD4;
+}
+.web_login .inputstyle2 {
+	width: 300px;
+	height: 34px;
+	padding-left: 5px;
+	line-height: 34px;
+	border: 1px solid #D7D7D7;
+	background: #fff;
+	color: #333;
+	border-radius: 2px;
+	font-size: 16px;
+	ime-mode: disabled;
+}
+.web_login .uinArea {
+	height: 55px;
+	position: relative;
+	z-index: 10;
+}
+.web_login .pwdArea {
+	height: 55px;
+	margin-bottom: 10px;
+	position: relative;
+	z-index: 3;
+}
+
+.cue {
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	border: 1px #CCCCCC solid;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.web_login {
+	padding-bottom: 20px;
+}
+.jianyi {
+	color: #fff;
+	text-align: center;
+	margin-top: 25px;
+	color: #B3B8C4;
+}
+.reg_form li {
+	height: 55px;
+}
+.cue {
+	margin-top: 15px;
+	margin-bottom: 10px;
+	border: 1px solid #eee;
+	border-radius: 3px;
+}
+.web_login input.inputstyle2:focus, .web_login input.inputstyle:focus {
+	border: 1px solid #5796f;
+	box-shadow: 0 0 0;
+}
+.web_login .reg_form {
+	width: 300px;
+	margin: 0 auto;
+}
+.button_blue {
+	display: inline-block;
+	float: left;
+	height: 41px;
+	border-radius: 2px;
+	background: #f63c30;
+	border: none;
+	cursor: pointer;
+	*border-bottom: none;
+	color: #fff;
+	font-size: 16px;
+	padding: 0 10px;
+	*width: 140px;
+	text-align: center;
+	outline: none;
+}
+input.button_blue:hover {
+	background: #f63c30;
+	*border-bottom: none;
+	color: #fff;
+	text-decoration: none;
+}
+a.zcxy {
+	text-decoration: underline;
+	line-height: 58px;
+	margin-left: 15px;
+	color: #959ca8;
+}
+.web_login .login_form {
+	margin-top: 30px;
+}
+.web_login .uinArea {
+	height: 60px;
+}
+.header .switch {
+	left: 53px;
+}
+.retrieve-reg {
+	position: absolute;
+	right: 40px;
+	bottom: 15px;
+}
+.retrieve-reg a {
+	color: #666;
+}
+.retrieve-reg span {
+	color: #999;
+	margin: 0 0 0 10px;
+}
+.retrieve-reg a span {
+	color: #f63c30;
+}
+.code a {
+	font-size: 14px;
+}
+.remember {
+	margin-left: -208px;
+	font-size: 13px;
+	color: #666;
+}
+.remember input[type="radio"] {
+	height: 20px;
+	cursor: pointer;
+	background: url(../image/log-reg.png) no-repeat;
+}
+.remember input[type='radio'] {
+	opacity: 1; 
+	display: inline-block;
+	height: 20px; 
+	background: red;
+}
+.remember input[type='radio']:checked + .remember {
+	background: url(../image/log-reg.png) no-repeat;
+}
+/*input[type="radio"] {
+	margin:3px 3px 0px 5px;
+	display:none;
+}
+label {
+	cursor:pointer;
+	width:10px;
+	height:10px;
+	background:url(../image/log-reg.png) no-repeat 0;
+}
+label.checked {
+	background-position:left bottom;
+}
+*/
+/* 弹窗样式*/
+ .errorhei{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    display:none;
+    z-index: 1000;
+ }
+ .errorhei1{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+ }
+  .errorhei2{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+ }

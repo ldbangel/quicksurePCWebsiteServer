@@ -1,0 +1,58 @@
+#mask_shadow {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  z-index: 990;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+#popup {
+  display: none;
+  opacity: 0; 
+  position: absolute;
+  z-index: 999;
+  top: 150px;
+  width: 600px;
+  height: 190px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius:5px;
+}
+#popup .title {
+  position: relative;
+  width: 100%;
+  height: 55px;
+  background-color: #f63c30;
+  cursor: move;
+  border-radius: 5px 5px 0px 0px;
+}
+#popup .title p {
+  padding-left: 14px;
+  line-height: 55px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+#popup .title span {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  color: #000;
+  opacity: .2;
+  font-size: 21px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #333;
+}
+#popup .title span:hover {
+  opacity: .8;
+}
+#popup .cont { width: 100%; height: 135px; background-color: #EDEDED;  border-radius: 0px 0px 5px 5px; text-align: center;
+  line-height: 135px; font-size: 18px;}
+#btn1 {
+  margin: 30px;
+}
